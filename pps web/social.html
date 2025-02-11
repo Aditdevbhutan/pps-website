@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Social Media Box */
+.social-box {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 320px;
+    transition: 0.3s;
+}
+
+.social-box:hover {
+    transform: scale(1.05);
+}
+
+/* Facebook Logo */
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+/* Facebook Link */
+.fb-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #1877F2;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.fb-link:hover {
+    background: #0d6efd;
+}
+
+    </style>
+</head>
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="logo">
+            <img src="download.jpeg" alt="Logo">
+            <h2>Phuentsholing primary school</h2>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="principal.html">Principal</a>
+        <a href="vprincipal.html">vice principles</a>
+        <a href="elog.html">Developers</a>
+        <a href="departements.html">Departements</a>
+        <a href="social.html">social media</a>
+        
+    </div>
+    <span class="openbtn" onclick="openNav()">&#9776; </span>
+
+    <script src="scripts.js"></script>
+
+    <div class="social-box">
+        <img src="facebook-logo.png" alt="Facebook Logo" class="logo">
+        <h2>Follow Us on Facebook</h2>
+        <a href="https://www.facebook.com/phuentsholinglss" target="_blank" class="fb-link">
+            Visit Our Page
+        </a>
+    </div>
+
+</body>
+</html>
